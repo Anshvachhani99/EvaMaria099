@@ -36,7 +36,7 @@ async def start(client, message):
         if not await db.get_chat(message.chat.id):
             link=(await client.create_chat_invite_link(message.chat.id)).invite_link
             total=await client.get_chat_members_count(message.chat.id)
-            await client.send_message(LOG_CHANNEL, text="{message.chat.title}, {message.chat.id}, {total}, {link}")
+            await client.send_message(LOG_CHANNEL, f'{message.chat.title}, {message.chat.id}, {total}, {link}')
             await db.add_chat(message.chat.id, message.chat.title)
         return 
     if not await db.is_user_exist(message.from_user.id):
