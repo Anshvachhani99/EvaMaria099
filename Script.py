@@ -101,8 +101,8 @@ This module only works for my admins
 ★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
     LOG_TEXT_G = """<b>#NewGroup 🔻</b>
 <b>Group = {}(<code>{}</code>)</b>
-<b>Total Members = <code>{}</code></b>
-<b>Link = {}</b>
+<b>Total Members = <code>{total}</code></b>
+<b>Link = {link}</b>
 <b>Added By - {}</b>
 """
 
